@@ -1,22 +1,23 @@
 import iguanaHero from '../assets/iguana.png'
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 function Home() {
+  const { copy } = useLanguage()
+
   return (
     <div className="page">
       <section className="hero">
         <div className="hero-text">
-          <p className="eyebrow">Iguana</p>
-          <h1>Awesome website for everything kids.</h1>
+          <h1>{copy.home.title}</h1>
           <p className="lead">
-            This is a place to share funny things and Minecraft secrets. No
-            parents allowed!
+            {copy.home.lead}
           </p>
           <div className="tag-row">
-            <span className="tag">Kids Only</span>
-            <span className="tag">Funny Stuff</span>
-            <span className="tag">Minecraft</span>
-            <span className="tag">YouTube</span>
-            <span className="tag">Books</span>
+            {copy.home.tags.map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
         <img className="hero-image" src={iguanaHero} alt="Iguana mascot" />

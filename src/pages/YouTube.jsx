@@ -1,6 +1,7 @@
 import haminations from '../assets/youtube/hamination.jpeg'
 import aCookieGod from '../assets/youtube/acookiegod.jpg'
 import timonVerbeeck from '../assets/youtube/timon-verbeeck.jpeg'
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 const channels = [
   {
@@ -21,24 +22,26 @@ const channels = [
 ]
 
 function YouTube() {
+  const { copy } = useLanguage()
+
   return (
     <div className="page">
       <div className="page-header">
-        <h1>YouTube</h1>
-        <p>Top channels for kids who love laughs, builds, and chaos.</p>
+        <h1>{copy.youtube.title}</h1>
+        <p>{copy.youtube.intro}</p>
       </div>
 
-      <section className="grid">
+      <section className="grid grid-media">
         {channels.map((channel) => (
           <a
             key={channel.name}
-            className="card youtube-card"
+            className="card youtube-card media-card"
             href={channel.url}
             target="_blank"
             rel="noreferrer"
           >
             <img
-              className="card-image youtube-image"
+              className="card-image youtube-image media-image"
               src={channel.image}
               alt={`${channel.name} channel`}
             />

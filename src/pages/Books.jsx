@@ -1,38 +1,43 @@
 import dogMan from '../assets/books/dog man.jpg'
 import helpZoo from '../assets/books/help direren tuin.jpg'
 import superDiaperBaby from '../assets/books/super diaper baby.jpg'
-
-const books = [
-  {
-    title: 'Dog Man',
-    text:
-      'A super funny comic adventure about a half-dog, half-cop hero who fights crime and learns about friendship.',
-    image: dogMan,
-  },
-  {
-    title: 'Help, We Hebben een Dierentuin',
-    text: 'A wild zoo story full of surprises and animal chaos.',
-    image: helpZoo,
-  },
-  {
-    title: 'Super Diaper Baby',
-    text: 'A tiny hero with big powers saving the day in epic ways.',
-    image: superDiaperBaby,
-  },
-]
+import { useLanguage } from '../i18n/LanguageContext.jsx'
 
 function Books() {
+  const { copy } = useLanguage()
+  const books = [
+    {
+      title: 'Dog Man',
+      text: copy.books.items.dogMan,
+      image: dogMan,
+    },
+    {
+      title: 'Help, We Hebben een Dierentuin',
+      text: copy.books.items.zoo,
+      image: helpZoo,
+    },
+    {
+      title: 'Super Diaper Baby',
+      text: copy.books.items.diaper,
+      image: superDiaperBaby,
+    },
+  ]
+
   return (
     <div className="page">
       <div className="page-header">
-        <h1>Books</h1>
-        <p>Books packed with laughs, action, and heroes for kids only.</p>
+        <h1>{copy.books.title}</h1>
+        <p>{copy.books.intro}</p>
       </div>
 
-      <section className="grid">
+      <section className="grid grid-media">
         {books.map((book) => (
-          <article key={book.title} className="card">
-            <img className="card-image" src={book.image} alt={book.title} />
+          <article key={book.title} className="card media-card">
+            <img
+              className="card-image media-image"
+              src={book.image}
+              alt={book.title}
+            />
             <h3>{book.title}</h3>
             <p>{book.text}</p>
           </article>
