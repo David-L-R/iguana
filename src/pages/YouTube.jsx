@@ -31,17 +31,17 @@ function YouTube() {
         <p>{copy.youtube.intro}</p>
       </div>
 
-      <section className="grid grid-media">
+      <section className="grid">
         {channels.map((channel) => (
           <a
             key={channel.name}
-            className="card youtube-card media-card"
+            className="card youtube-card"
             href={channel.url}
             target="_blank"
             rel="noreferrer"
           >
             <img
-              className="card-image youtube-image media-image"
+              className="card-image youtube-image"
               src={channel.image}
               alt={`${channel.name} channel`}
             />

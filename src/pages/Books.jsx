@@ -30,14 +30,10 @@ function Books() {
         <p>{copy.books.intro}</p>
       </div>
 
-      <section className="grid grid-media">
+      <section className="grid">
         {books.map((book) => (
-          <article key={book.title} className="card media-card">
-            <img
-              className="card-image media-image"
-              src={book.image}
-              alt={book.title}
-            />
+          <article key={book.title} className="card">
+            <img className="card-image" src={book.image} alt={book.title} />
             <h3>{book.title}</h3>
             <p>{book.text}</p>
           </article>

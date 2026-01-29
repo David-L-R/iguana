@@ -33,17 +33,17 @@ function Movies() {
         <p>{copy.movies.intro}</p>
       </div>
 
-      <section className="grid grid-media">
+      <section className="grid">
         {movies.map((movie) => (
           <a
             key={movie.title}
-            className="card youtube-card media-card"
+            className="card youtube-card"
             href={movie.url}
             target="_blank"
             rel="noreferrer"
           >
             <img
-              className="card-image youtube-image media-image"
+              className="card-image youtube-image"
               src={movie.image}
               alt={movie.title}
             />

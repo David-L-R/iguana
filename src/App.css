@@ -277,10 +277,6 @@
   border: 1px solid rgba(226, 232, 240, 0.9);
 }
 
-.media-card {
-  width: min(540px, 100%);
-}
-
 .card h3 {
   margin-top: 0;
   margin-bottom: 0.6rem;
@@ -317,6 +313,10 @@
   border-radius: 16px;
   object-fit: cover;
   margin-bottom: 0.9rem;
+}
+
+.media-card {
+  width: min(540px, 100%);
 }
 
 .media-image {
