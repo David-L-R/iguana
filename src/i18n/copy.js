@@ -32,6 +32,10 @@ export const copy = {
         spider:
           'A fresh Spider-Verse adventure with style, humor, and hero moments.',
         lego: 'Everything is awesome with bricks, jokes, and huge action.',
+        rutger:
+          'A fun friendship adventure with lots of laughs and surprises.',
+        minecraft: 'Crafting, chaos, and blocky action in a world of builds.',
+        jurassic: 'Dinosaurs, danger, and a legendary adventure on a wild island.',
       },
     },
     minecraft: {
@@ -101,6 +105,12 @@ export const copy = {
         spider:
           'Een frisse Spider-Verse avontuur met stijl, humor en heldenmomenten.',
         lego: 'Alles is awesome met blokken, grappen en mega actie.',
+        rutger:
+          'Een grappig vriendschapsavontuur vol lachen en verrassingen.',
+        minecraft:
+          'Craften, chaos en blokkerige actie in een wereld vol builds.',
+        jurassic:
+          "Dino's, gevaar en een legendarisch avontuur op een wild eiland.",
       },
     },
     minecraft: {
@@ -171,6 +181,11 @@ export const copy = {
         spider:
           'Une aventure Spider-Verse pleine de style, humour et héros.',
         lego: "Tout est awesome avec des briques, des blagues et de l'action.",
+        rutger:
+          "Une aventure d'amitié super drôle, pleine de rires et de surprises.",
+        minecraft: "Craft, chaos et action pixelisée dans un monde de builds.",
+        jurassic:
+          'Dinosaures, danger et une aventure légendaire sur une île sauvage.',
       },
     },
     minecraft: {
@@ -240,6 +255,11 @@ export const copy = {
         spider:
           'Ein frisches Spider-Verse Abenteuer mit Style, Humor und Heldenmomenten.',
         lego: 'Alles ist awesome mit Steinen, Witzen und Action.',
+        rutger:
+          'Ein lustiges Freundschaftsabenteuer voller Lacher und Überraschungen.',
+        minecraft: 'Crafting, Chaos und blockige Action in einer Build-Welt.',
+        jurassic:
+          'Dinos, Gefahr und ein legendäres Abenteuer auf einer wilden Insel.',
       },
     },
     minecraft: {
