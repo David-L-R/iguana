@@ -27,10 +27,11 @@ export const copy = {
       title: 'Movies',
       intro: 'The coolest movies if you are not a stinky adult.',
       items: {
-        rutger:
-          'A fun friendship adventure with lots of laughs and surprises.',
-        minecraft: 'Crafting, chaos, and blocky action in a world of builds.',
-        jurassic: 'Dinosaurs, danger, and a legendary adventure on a wild island.',
+        mario: 'Power-ups, pipes, and a wild adventure in the Mushroom Kingdom.',
+        paddington: 'A kind bear, big laughs, and heartwarming chaos.',
+        spider:
+          'A fresh Spider-Verse adventure with style, humor, and hero moments.',
+        lego: 'Everything is awesome with bricks, jokes, and huge action.',
       },
     },
     minecraft: {
@@ -94,12 +95,12 @@ export const copy = {
       title: 'Films',
       intro: 'De coolste films als je geen stinkende volwassene bent.',
       items: {
-        rutger:
-          'Een grappig vriendschapsavontuur vol lachen en verrassingen.',
-        minecraft:
-          'Craften, chaos en blokkerige actie in een wereld vol builds.',
-        jurassic:
-          "Dino's, gevaar en een legendarisch avontuur op een wild eiland.",
+        mario:
+          'Power-ups, pijpen en een wild avontuur in het Paddenstoelenrijk.',
+        paddington: 'Een lieve beer, veel lachen en hartverwarmende chaos.',
+        spider:
+          'Een frisse Spider-Verse avontuur met stijl, humor en heldenmomenten.',
+        lego: 'Alles is awesome met blokken, grappen en mega actie.',
       },
     },
     minecraft: {
@@ -163,11 +164,13 @@ export const copy = {
       title: 'Films',
       intro: "Les films les plus cool si tu n'es pas un adulte qui pue.",
       items: {
-        rutger:
-          "Une aventure d'amitié super drôle, pleine de rires et de surprises.",
-        minecraft: "Craft, chaos et action pixelisée dans un monde de builds.",
-        jurassic:
-          'Dinosaures, danger et une aventure légendaire sur une île sauvage.',
+        mario:
+          "Power-ups, tuyaux et aventure folle dans le Royaume Champignon.",
+        paddington:
+          'Un ours trop gentil, des rires et un joyeux chaos.',
+        spider:
+          'Une aventure Spider-Verse pleine de style, humour et héros.',
+        lego: "Tout est awesome avec des briques, des blagues et de l'action.",
       },
     },
     minecraft: {
@@ -231,11 +234,12 @@ export const copy = {
       title: 'Filme',
       intro: 'Die coolsten Filme, wenn du kein stinkender Erwachsener bist.',
       items: {
-        rutger:
-          'Ein lustiges Freundschaftsabenteuer voller Lacher und Überraschungen.',
-        minecraft: 'Crafting, Chaos und blockige Action in einer Build-Welt.',
-        jurassic:
-          'Dinos, Gefahr und ein legendäres Abenteuer auf einer wilden Insel.',
+        mario:
+          'Power-Ups, Röhren und ein wildes Abenteuer im Pilz-Königreich.',
+        paddington: 'Ein netter Bär, viele Lacher und Herz-Chaos.',
+        spider:
+          'Ein frisches Spider-Verse Abenteuer mit Style, Humor und Heldenmomenten.',
+        lego: 'Alles ist awesome mit Steinen, Witzen und Action.',
       },
     },
     minecraft: {
