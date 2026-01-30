@@ -43,7 +43,7 @@ function Movies() {
         <p>{copy.movies.intro}</p>
       </div>
 
-      <section className='grid'>
+      <section className='grid grid-three'>
         {movies.map((movie) => (
           <a
             key={movie.title}

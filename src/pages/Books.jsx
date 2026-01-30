@@ -30,7 +30,7 @@ function Books() {
         <p>{copy.books.intro}</p>
       </div>
 
-      <section className="grid">
+      <section className="grid grid-three">
         {books.map((book) => (
           <article key={book.title} className="card">
             <img className="card-image" src={book.image} alt={book.title} />
@@ -38,19 +38,6 @@ function Books() {
             <p>{book.text}</p>
           </article>
         ))}
-        <article className="card">
-          <h3>{copy.books.article.title}</h3>
-          <p>{copy.books.article.text}</p>
-          <p>
-            <a
-              href="https://www.webeet.io/articles/stemming-vs-lemmatization-the-battle-of-the-word-choppers"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {copy.books.article.linkLabel}
-            </a>
-          </p>
-        </article>
       </section>
     </div>
   )

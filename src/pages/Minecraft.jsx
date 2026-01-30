@@ -30,7 +30,7 @@ function Minecraft() {
         <p>{copy.minecraft.intro}</p>
       </div>
 
-      <section className="grid">
+      <section className="grid grid-three">
         {minecraftTips.map((tip) => (
           <article key={tip.title} className="card">
             <img className="card-image" src={tip.image} alt={tip.title} />

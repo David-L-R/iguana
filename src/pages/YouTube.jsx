@@ -49,7 +49,7 @@ function YouTube() {
         <p>{copy.youtube.intro}</p>
       </div>
 
-      <section className='grid'>
+      <section className='grid grid-three'>
         {channels.map((channel) => (
           <a
             key={channel.name}

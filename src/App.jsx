@@ -7,6 +7,8 @@ import Movies from './pages/Movies.jsx'
 import Minecraft from './pages/Minecraft.jsx'
 import Books from './pages/Books.jsx'
 import Memes from './pages/Memes.jsx'
+import Votes from './pages/Votes.jsx'
+import VotesDetail from './pages/VotesDetail.jsx'
 import iguanaIcon from './assets/iguana.png'
 import { LanguageContext } from './i18n/LanguageContext.jsx'
 import { copy } from './i18n/copy.js'
@@ -49,7 +51,7 @@ function App() {
     <LanguageContext.Provider value={{ language, toggleLanguage, copy: text }}>
       <div className="app">
         <header className="site-header">
-          <div className="brand">
+          <NavLink className="brand" to="/">
             <div className="brand-row">
               <span className="brand-title">{text.brand.title}</span>
               {showNavIguana ? (
@@ -61,7 +63,7 @@ function App() {
               ) : null}
             </div>
             <span className="brand-subtitle">{text.brand.subtitle}</span>
-          </div>
+          </NavLink>
           <div className="nav-actions">
             <div className="lang-menu">
               <button
@@ -144,6 +146,9 @@ function App() {
             <NavLink to="/memes" className={getNavClass}>
               {text.nav.memes}
             </NavLink>
+            <NavLink to="/votes" className={getNavClass}>
+              {text.nav.votes}
+            </NavLink>
             <NavLink to="/books" className={getNavClass}>
               {text.nav.books}
             </NavLink>
@@ -157,6 +162,8 @@ function App() {
             <Route path="/movies" element={<Movies />} />
             <Route path="/minecraft" element={<Minecraft />} />
             <Route path="/memes" element={<Memes />} />
+            <Route path="/votes" element={<Votes />} />
+            <Route path="/votes/:slug" element={<VotesDetail />} />
             <Route path="/books" element={<Books />} />
           </Routes>
         </main>
