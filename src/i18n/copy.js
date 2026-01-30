@@ -60,6 +60,11 @@ export const copy = {
         zoo: 'A wild zoo story full of surprises and animal chaos.',
         diaper: 'A tiny hero with big powers saving the day in epic ways.',
       },
+      article: {
+        title: 'Stemming vs. Lemmatization',
+        text: 'A fun read about how words get chopped up in NLP ✂️📚',
+        linkLabel: 'Read the article',
+      },
     },
     memes: {
       title: 'Memes',
@@ -134,6 +139,11 @@ export const copy = {
           'Een supergrappig stripavontuur over een half-hond, half-agent held die misdaad bestrijdt en vriendschap leert.',
         zoo: 'Een gek dierentuinverhaal vol verrassingen en dierenchaos.',
         diaper: 'Een kleine held met grote krachten die de dag redt.',
+      },
+      article: {
+        title: 'Stemming vs. Lemmatization',
+        text: 'Leuk om te lezen over hoe woorden worden geknipt in NLP ✂️📚',
+        linkLabel: 'Lees het artikel',
       },
     },
     memes: {
@@ -210,6 +220,11 @@ export const copy = {
         zoo: 'Une histoire de zoo complètement folle, pleine de surprises.',
         diaper: 'Un mini héros avec de grands pouvoirs qui sauve la journée.',
       },
+      article: {
+        title: 'Stemming vs. Lemmatization',
+        text: 'Une lecture sympa sur les mots découpés en NLP ✂️📚',
+        linkLabel: "Lire l'article",
+      },
     },
     memes: {
       title: 'Mèmes',
@@ -283,6 +298,11 @@ export const copy = {
           'Ein superlustiges Comic-Abenteuer über einen Halb-Hund, Halb-Polizist Helden, der Verbrechen bekämpft und Freundschaft lernt.',
         zoo: 'Eine wilde Zoo-Story voller Überraschungen und Tier-Chaos.',
         diaper: 'Ein Mini-Held mit großen Kräften, der den Tag rettet.',
+      },
+      article: {
+        title: 'Stemming vs. Lemmatization',
+        text: 'Ein cooler Text über Wörter, die in NLP zerhackt werden ✂️📚',
+        linkLabel: 'Artikel lesen',
       },
     },
     memes: {

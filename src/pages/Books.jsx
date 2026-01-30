@@ -38,6 +38,19 @@ function Books() {
             <p>{book.text}</p>
           </article>
         ))}
+        <article className="card">
+          <h3>{copy.books.article.title}</h3>
+          <p>{copy.books.article.text}</p>
+          <p>
+            <a
+              href="https://www.webeet.io/articles/stemming-vs-lemmatization-the-battle-of-the-word-choppers"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {copy.books.article.linkLabel}
+            </a>
+          </p>
+        </article>
       </section>
     </div>
   )

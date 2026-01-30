@@ -367,6 +367,22 @@
     justify-content: space-between;
   }
 
+  .lang-menu {
+    width: 100%;
+  }
+
+  .lang-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .lang-dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
   .nav {
     display: none;
     width: 100%;
@@ -399,8 +415,5 @@
 
   .youtube-image {
     filter: none;
-  }
-}
-    width: 100%;
   }
 }

@@ -38,6 +38,7 @@ function App() {
 
   useEffect(() => {
     setMenuOpen(false)
+    setLangMenuOpen(false)
   }, [pathname])
 
   useEffect(() => {
@@ -68,7 +69,10 @@ function App() {
                 type="button"
                 aria-haspopup="menu"
                 aria-expanded={langMenuOpen}
-                onClick={() => setLangMenuOpen((open) => !open)}
+                onClick={() => {
+                  setLangMenuOpen((open) => !open)
+                  setMenuOpen(false)
+                }}
               >
                 {languageLabel}
               </button>
@@ -114,7 +118,10 @@ function App() {
               type="button"
               aria-label="Toggle navigation"
               aria-expanded={menuOpen}
-              onClick={() => setMenuOpen((open) => !open)}
+              onClick={() => {
+                setMenuOpen((open) => !open)
+                setLangMenuOpen(false)
+              }}
             >
               <span />
               <span />
