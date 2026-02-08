@@ -43,7 +43,7 @@ function Votes() {
     {
       slug: 'animals',
       title: copy.votes.animals,
-      description: copy.votes.comingSoon,
+      description: copy.votes.animalsDescription,
       image: animalsImage,
     },
   ]

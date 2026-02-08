@@ -11,6 +11,17 @@ import booksImage from '../assets/votes/books/books.webp'
 import foodsImage from '../assets/votes/foods/foods.webp'
 import vehiclesImage from '../assets/votes/vehicles/cybertruck.webp'
 import animalsImage from '../assets/votes/animals/animals.avif'
+import artisImage from '../assets/votes/animals/Artis.jpg'
+import centralParkZooImage from '../assets/votes/animals/central_park_zoo.jpg'
+import pandaImage from '../assets/votes/animals/panda.jpeg'
+import polarBearImage from '../assets/votes/animals/polar_bear.avif'
+import pythonImage from '../assets/votes/animals/python.webp'
+import boaImage from '../assets/votes/animals/boa.jpg'
+import lionImage from '../assets/votes/animals/lion.webp'
+import tigerImage from '../assets/votes/animals/tiger.webp'
+import raccoonImage from '../assets/votes/animals/raccoon.jpeg'
+import crocodileImage from '../assets/votes/animals/crocodile.webp'
+import sharkImage from '../assets/votes/animals/shark.avif'
 
 function VotesDetail() {
   const { copy } = useLanguage()
@@ -87,9 +98,112 @@ function VotesDetail() {
       {
         slug: 'animals',
         title: copy.votes.animals,
-        description: copy.votes.comingSoon,
+        description: copy.votes.animalsDescription,
         image: animalsImage,
-        questions: [],
+        questions: [
+          {
+            type: 'quiz',
+            text: copy.votes.animalsQ1,
+            fact: copy.votes.animalsFact1,
+            options: [
+              {
+                label: copy.votes.artis,
+                image: artisImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.centralParkZoo,
+                image: centralParkZooImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.animalsQ2,
+            fact: copy.votes.animalsFact2,
+            options: [
+              {
+                label: copy.votes.panda,
+                image: pandaImage,
+                isCorrect: false,
+              },
+              {
+                label: copy.votes.polarBear,
+                image: polarBearImage,
+                isCorrect: true,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.animalsQ3,
+            fact: copy.votes.animalsFact3,
+            options: [
+              {
+                label: copy.votes.python,
+                image: pythonImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.boa,
+                image: boaImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.animalsQ4,
+            fact: copy.votes.animalsFact4,
+            options: [
+              {
+                label: copy.votes.lion,
+                image: lionImage,
+                isCorrect: false,
+              },
+              {
+                label: copy.votes.tiger,
+                image: tigerImage,
+                isCorrect: true,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.animalsQ5,
+            fact: copy.votes.animalsFact5,
+            options: [
+              {
+                label: copy.votes.panda,
+                image: pandaImage,
+                isCorrect: false,
+              },
+              {
+                label: copy.votes.raccoon,
+                image: raccoonImage,
+                isCorrect: true,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.animalsQ6,
+            fact: copy.votes.animalsFact6,
+            options: [
+              {
+                label: copy.votes.crocodile,
+                image: crocodileImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.shark,
+                image: sharkImage,
+                isCorrect: false,
+              },
+            ],
+          },
+        ],
       },
     ],
     [copy],
@@ -119,6 +233,23 @@ function VotesDetail() {
 
   const currentQuestion = questionnaire.questions[currentIndex]
   const hasVoted = selections[currentIndex] !== undefined
+  const isQuiz = currentQuestion?.type === 'quiz'
+  const quizTotal = useMemo(
+    () => questionnaire.questions.filter((question) => question.type === 'quiz')
+      .length,
+    [questionnaire.questions],
+  )
+  const quizScore = useMemo(
+    () =>
+      questionnaire.questions.reduce((count, question, index) => {
+        if (question.type !== 'quiz') {
+          return count
+        }
+        const selectedOption = question.options?.[selections[index]]
+        return selectedOption?.isCorrect ? count + 1 : count
+      }, 0),
+    [questionnaire.questions, selections],
+  )
 
   const handleVote = (optionIndex) => {
     if (hasVoted) return
@@ -134,6 +265,47 @@ function VotesDetail() {
       return
     }
     setShowAllResults(true)
+  }
+
+  const renderPercentResults = (question, selectedIndex) => (
+    <div className="vote-results">
+      {question.options.map((option, index) => (
+        <div key={option.label} className="vote-option">
+          <div className="vote-label">
+            <span>
+              {option.label}
+              {selectedIndex === index ? (
+                <span className="vote-you">{copy.votes.yourPick}</span>
+              ) : null}
+            </span>
+            <span className="vote-percent">{option.percent}%</span>
+          </div>
+          <div className="vote-bar">
+            <div
+              className="vote-bar-fill"
+              style={{ width: `${option.percent}%` }}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+
+  const renderQuizResults = (question, selectedIndex) => {
+    const selectedOption = question.options[selectedIndex]
+    const correctOption = question.options.find((option) => option.isCorrect)
+    const isCorrect = selectedOption?.isCorrect
+    return (
+      <div className="vote-results">
+        <p className={`vote-feedback ${isCorrect ? 'is-correct' : 'is-wrong'}`}>
+          {isCorrect ? copy.votes.correct : copy.votes.wrong}
+          {correctOption
+            ? ` ${copy.votes.correctAnswer} ${correctOption.label}`
+            : ''}
+        </p>
+        {question.fact ? <p className="vote-fact">{question.fact}</p> : null}
+      </div>
+    )
   }
 
   return (
@@ -183,31 +355,12 @@ function VotesDetail() {
                 </div>
 
                 {hasVoted ? (
-                  <div className="vote-results">
-                    {currentQuestion.options.map((option, index) => (
-                      <div key={option.label} className="vote-option">
-                        <div className="vote-label">
-                          <span>
-                            {option.label}
-                            {selections[currentIndex] === index ? (
-                              <span className="vote-you">
-                                {copy.votes.yourPick}
-                              </span>
-                            ) : null}
-                          </span>
-                          <span className="vote-percent">
-                            {option.percent}%
-                          </span>
-                        </div>
-                        <div className="vote-bar">
-                          <div
-                            className="vote-bar-fill"
-                            style={{ width: `${option.percent}%` }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  isQuiz
+                    ? renderQuizResults(currentQuestion, selections[currentIndex])
+                    : renderPercentResults(
+                        currentQuestion,
+                        selections[currentIndex],
+                      )
                 ) : null}
 
                 {hasVoted ? (
@@ -225,34 +378,17 @@ function VotesDetail() {
             </div>
           ) : (
             <div className="vote-questions">
+              {quizTotal > 0 ? (
+                <p className="vote-score">
+                  {copy.votes.scoreLabel} {quizScore}/{quizTotal}
+                </p>
+              ) : null}
               {questionnaire.questions.map((question, qIndex) => (
                 <div key={question.text} className="vote-question">
                   <p className="vote-title">{question.text}</p>
-                  <div className="vote-results">
-                    {question.options.map((option, index) => (
-                      <div key={option.label} className="vote-option">
-                        <div className="vote-label">
-                          <span>
-                            {option.label}
-                            {selections[qIndex] === index ? (
-                              <span className="vote-you">
-                                {copy.votes.yourPick}
-                              </span>
-                            ) : null}
-                          </span>
-                          <span className="vote-percent">
-                            {option.percent}%
-                          </span>
-                        </div>
-                        <div className="vote-bar">
-                          <div
-                            className="vote-bar-fill"
-                            style={{ width: `${option.percent}%` }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  {question.type === 'quiz'
+                    ? renderQuizResults(question, selections[qIndex])
+                    : renderPercentResults(question, selections[qIndex])}
                 </div>
               ))}
               <NavLink className="vote-back" to="/votes">
