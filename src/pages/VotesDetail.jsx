@@ -36,32 +36,36 @@ function VotesDetail() {
         image: gamesImage,
         questions: [
           {
+            type: 'quiz',
             text: copy.votes.q1,
+            fact: copy.votes.gamesFact1,
             options: [
               {
                 label: copy.votes.roblox,
-                percent: 48,
                 image: robloxImage,
+                isCorrect: false,
               },
               {
                 label: copy.votes.minecraft,
-                percent: 52,
                 image: minecraftImage,
+                isCorrect: true,
               },
             ],
           },
           {
+            type: 'quiz',
             text: copy.votes.q2,
+            fact: copy.votes.gamesFact2,
             options: [
               {
                 label: copy.votes.nintendo,
-                percent: 37,
                 image: nintendoImage,
+                isCorrect: true,
               },
               {
                 label: copy.votes.ps5,
-                percent: 63,
                 image: ps5Image,
+                isCorrect: false,
               },
             ],
           },
