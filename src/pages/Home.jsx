@@ -56,10 +56,10 @@ function Home() {
               return next;
             })
           }
-          aria-label='Toggle iguana image'
+          aria-label={copy.home.toggleImageLabel}
         >
           <span className='hero-hint' aria-hidden='true'>
-            click me
+            {copy.home.clickMe}
           </span>
           <span className='hero-squiggle' aria-hidden='true' />
           <img

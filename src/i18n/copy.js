@@ -18,6 +18,8 @@ export const copy = {
       title: "Everything Funny",
       lead: "Don't know where to look? You can find all the cool stuff here. No parents allowed!",
       tags: ["Kids Only", "Funny Stuff", "Minecraft", "YouTube", "Books"],
+      clickMe: "Click me",
+      toggleImageLabel: "Toggle iguana image",
     },
     youtube: {
       title: "YouTube",
@@ -161,6 +163,8 @@ export const copy = {
         "YouTube",
         "Boeken",
       ],
+      clickMe: "Klik mij",
+      toggleImageLabel: "Wissel iguana-afbeelding",
     },
     youtube: {
       title: "YouTube",
@@ -299,6 +303,8 @@ export const copy = {
       title: "Tout pour rigoler",
       lead: "Tu ne sais pas où regarder ? Ici tu trouves tout ce qui est cool. Parents interdits !",
       tags: ["Kids only", "Trucs drôles", "Minecraft", "YouTube", "Livres"],
+      clickMe: "Clique-moi",
+      toggleImageLabel: "Changer l'image de l'iguane",
     },
     youtube: {
       title: "YouTube",
@@ -439,6 +445,8 @@ export const copy = {
       title: "Alles zum Lachen",
       lead: "Keine Ahnung wo du suchen sollst? Hier findest du den ganzen coolen Kram. Eltern verboten!",
       tags: ["Nur Kids", "Lustige Sachen", "Minecraft", "YouTube", "Bücher"],
+      clickMe: "Klick mich",
+      toggleImageLabel: "Iguana-Bild wechseln",
     },
     youtube: {
       title: "YouTube",
