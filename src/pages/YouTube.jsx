@@ -3,7 +3,7 @@ import aCookieGod from "../assets/youtube/acookiegod.jpg";
 import timonVerbeeck from "../assets/youtube/timon-verbeeck.jpeg";
 import wenzo from "../assets/youtube/wenzo.jpg";
 import rutger from "../assets/youtube/rutger.jpg";
-import dutchtuber from "../assets/youtube/dutchtuber.jpg";
+import dutchtuber from "../assets/youtube/Dutchtuber.jpg";
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 
 const channels = [
