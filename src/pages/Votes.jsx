@@ -37,7 +37,7 @@ function Votes() {
     {
       slug: 'vehicles',
       title: copy.votes.vehicles,
-      description: copy.votes.comingSoon,
+      description: copy.votes.vehiclesDescription,
       image: vehiclesImage,
     },
     {

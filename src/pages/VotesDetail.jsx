@@ -10,6 +10,22 @@ import youtubeImage from '../assets/votes/youtube_channels/youtube.svg'
 import booksImage from '../assets/votes/books/books.webp'
 import foodsImage from '../assets/votes/foods/foods.webp'
 import vehiclesImage from '../assets/votes/vehicles/cybertruck.webp'
+import ctSideWindowImage from '../assets/votes/vehicles/ct_side_window.png'
+import ctWindshieldImage from '../assets/votes/vehicles/ct_windshield.png'
+import boeing747Image from '../assets/votes/vehicles/747.jpeg'
+import biggestTruckImage from '../assets/votes/vehicles/biggest_truck.jpeg'
+import bikeImage from '../assets/votes/vehicles/bike.jpg'
+import boatImage from '../assets/votes/vehicles/boat.jpg'
+import f1Image from '../assets/votes/vehicles/f1.avif'
+import motoGpImage from '../assets/votes/vehicles/moto_gp.webp'
+import mercedes300SlrImage from '../assets/votes/vehicles/955 Mercedes-Benz 300 SLR.webp'
+import bugattiLaVoitureNoireImage from '../assets/votes/vehicles/Bugatti La Voiture Noire.avif'
+import davidBaszuckiImage from '../assets/votes/vehicles/David Baszucki.webp'
+import luigiImage from '../assets/votes/vehicles/luigi.avif'
+import marioCharacterImage from '../assets/votes/vehicles/mario.webp'
+import markusPerssonImage from '../assets/votes/vehicles/markus persson.jpg'
+import gtaVImage from '../assets/votes/vehicles/gtav.png'
+import minecraftGameImage from '../assets/votes/vehicles/minecraft.png'
 import animalsImage from '../assets/votes/animals/animals.avif'
 import artisImage from '../assets/votes/animals/Artis.jpg'
 import centralParkZooImage from '../assets/votes/animals/central_park_zoo.jpg'
@@ -69,6 +85,57 @@ function VotesDetail() {
               },
             ],
           },
+          {
+            type: 'quiz',
+            text: copy.votes.q3,
+            fact: copy.votes.gamesFact3,
+            options: [
+              {
+                label: copy.votes.markusPersson,
+                image: markusPerssonImage,
+                isCorrect: false,
+              },
+              {
+                label: copy.votes.davidBaszucki,
+                image: davidBaszuckiImage,
+                isCorrect: true,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.q4,
+            fact: copy.votes.gamesFact4,
+            options: [
+              {
+                label: copy.votes.marioCharacter,
+                image: marioCharacterImage,
+                isCorrect: false,
+              },
+              {
+                label: copy.votes.luigiCharacter,
+                image: luigiImage,
+                isCorrect: true,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.q5,
+            fact: copy.votes.gamesFact5,
+            options: [
+              {
+                label: copy.votes.minecraft,
+                image: minecraftGameImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.gtaV,
+                image: gtaVImage,
+                isCorrect: false,
+              },
+            ],
+          },
         ],
       },
       {
@@ -95,9 +162,95 @@ function VotesDetail() {
       {
         slug: 'vehicles',
         title: copy.votes.vehicles,
-        description: copy.votes.comingSoon,
+        description: copy.votes.vehiclesDescription,
         image: vehiclesImage,
-        questions: [],
+        questions: [
+          {
+            type: 'quiz',
+            text: copy.votes.vehiclesQ1,
+            fact: copy.votes.vehiclesFact1,
+            options: [
+              {
+                label: copy.votes.sideWindow,
+                image: ctSideWindowImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.windshield,
+                image: ctWindshieldImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.vehiclesQ2,
+            fact: copy.votes.vehiclesFact2,
+            options: [
+              {
+                label: copy.votes.biggestDumpTruck,
+                image: biggestTruckImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.boeing747,
+                image: boeing747Image,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.vehiclesQ3,
+            fact: copy.votes.vehiclesFact3,
+            options: [
+              {
+                label: copy.votes.bike,
+                image: bikeImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.boat,
+                image: boatImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.vehiclesQ4,
+            fact: copy.votes.vehiclesFact4,
+            options: [
+              {
+                label: copy.votes.f1Car,
+                image: f1Image,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.motoGp,
+                image: motoGpImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.vehiclesQ5,
+            fact: copy.votes.vehiclesFact5,
+            options: [
+              {
+                label: copy.votes.mercedes300Slr,
+                image: mercedes300SlrImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.bugattiLaVoitureNoire,
+                image: bugattiLaVoitureNoireImage,
+                isCorrect: false,
+              },
+            ],
+          },
+        ],
       },
       {
         slug: 'animals',

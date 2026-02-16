@@ -84,6 +84,7 @@ export const copy = {
       foods: "Foods",
       vehicles: "Vehicles",
       animals: "Animals",
+      vehiclesDescription: "How well do you know crazy vehicle facts?",
       animalsDescription: "Test your animal knowledge and learn fun facts.",
       animalsQ1: "Which zoo is bigger?",
       animalsQ2: "Which bear can bite harder?",
@@ -114,16 +115,56 @@ export const copy = {
       raccoon: "Raccoon",
       crocodile: "Crocodile",
       shark: "Shark",
+      vehiclesQ1:
+        "Which window did Elon Musk break during the Cybertruck presentation?",
+      vehiclesQ2:
+        "Which is heavier: the biggest dump truck or a Boeing 747 jumbo jet?",
+      vehiclesQ3: "What can a circus bear ride?",
+      vehiclesQ4: "Which is faster: an F1 car or a MotoGP bike?",
+      vehiclesQ5: "Which car is the most expensive?",
+      vehiclesFact1:
+        "At the 2019 Cybertruck reveal, the side window cracked during the metal-ball demo.",
+      vehiclesFact2:
+        "The largest dump trucks can weigh more than a Boeing 747 at maximum takeoff weight.",
+      vehiclesFact3:
+        "Circus bears are often shown riding tiny bikes, not boats.",
+      vehiclesFact4:
+        "An F1 car is generally faster overall than a MotoGP bike, especially over a full lap.",
+      vehiclesFact5:
+        "The 1955 Mercedes-Benz 300 SLR Uhlenhaut Coupe sold for about $142 million, far above $12.5 million.",
+      sideWindow: "Side window",
+      windshield: "Windshield",
+      biggestDumpTruck: "Biggest dump truck",
+      boeing747: "Boeing 747 jumbo jet",
+      bike: "Bike",
+      boat: "Boat",
+      f1Car: "F1 car",
+      motoGp: "MotoGP bike",
+      mercedes300Slr: "1955 Mercedes-Benz 300 SLR",
+      bugattiLaVoitureNoire: "Bugatti La Voiture Noire",
       q1: "Roblox or Minecraft? Who has more players?",
       roblox: "Roblox",
       minecraft: "Minecraft",
       q2: "Nintendo Switch or PS5? Which sold more consoles?",
       nintendo: "Nintendo Switch",
       ps5: "PS5",
+      q3: "Who is richer?",
+      q4: "Who is the borther of Mario's brother's brother?",
+      q5: "What is the best-selling game of all time?",
+      markusPersson: "Markus Persson (creator of Minecraft)",
+      davidBaszucki: "David Baszucki (creator of Roblox)",
+      marioCharacter: "Mario",
+      luigiCharacter: "Luigi",
+      gtaV: "GTA V",
       gamesFact1:
         "Minecraft has sold over 300 million copies and has more players overall.",
       gamesFact2:
         "Nintendo Switch has sold far more consoles than PS5 worldwide.",
+      gamesFact3:
+        "David Baszucki is generally estimated to have a higher net worth than Markus Persson.",
+      gamesFact4: "Luigi is Mario's brother.",
+      gamesFact5:
+        "Minecraft is the best-selling game of all time, ahead of GTA V.",
       correct: "Goed!",
       wrong: "Fout!",
       correctAnswer: "Correct answer:",
@@ -230,6 +271,7 @@ export const copy = {
       foods: "Eten",
       vehicles: "Voertuigen",
       animals: "Dieren",
+      vehiclesDescription: "How well do you know crazy vehicle facts?",
       animalsDescription: "Test je dierenkennis en leer leuke weetjes.",
       animalsQ1: "Which zoo is bigger?",
       animalsQ2: "Which bear can bite harder?",
@@ -260,16 +302,56 @@ export const copy = {
       raccoon: "Raccoon",
       crocodile: "Crocodile",
       shark: "Shark",
+      vehiclesQ1:
+        "Which window did Elon Musk break during the Cybertruck presentation?",
+      vehiclesQ2:
+        "Which is heavier: the biggest dump truck or a Boeing 747 jumbo jet?",
+      vehiclesQ3: "What can a circus bear ride?",
+      vehiclesQ4: "Which is faster: an F1 car or a MotoGP bike?",
+      vehiclesQ5: "Which car is the most expensive?",
+      vehiclesFact1:
+        "At the 2019 Cybertruck reveal, the side window cracked during the metal-ball demo.",
+      vehiclesFact2:
+        "The largest dump trucks can weigh more than a Boeing 747 at maximum takeoff weight.",
+      vehiclesFact3:
+        "Circus bears are often shown riding tiny bikes, not boats.",
+      vehiclesFact4:
+        "An F1 car is generally faster overall than a MotoGP bike, especially over a full lap.",
+      vehiclesFact5:
+        "The 1955 Mercedes-Benz 300 SLR Uhlenhaut Coupe sold for about $142 million, far above $12.5 million.",
+      sideWindow: "Side window",
+      windshield: "Windshield",
+      biggestDumpTruck: "Biggest dump truck",
+      boeing747: "Boeing 747 jumbo jet",
+      bike: "Bike",
+      boat: "Boat",
+      f1Car: "F1 car",
+      motoGp: "MotoGP bike",
+      mercedes300Slr: "1955 Mercedes-Benz 300 SLR",
+      bugattiLaVoitureNoire: "Bugatti La Voiture Noire",
       q1: "Roblox of Minecraft? Wie heeft meer spelers?",
       roblox: "Roblox",
       minecraft: "Minecraft",
       q2: "Nintendo Switch of PS5? Welke is meer verkocht?",
       nintendo: "Nintendo Switch",
       ps5: "PS5",
+      q3: "Who is richer?",
+      q4: "Who is the borther of Mario's brother's brother?",
+      q5: "What is the best-selling game of all time?",
+      markusPersson: "Markus Persson (creator of Minecraft)",
+      davidBaszucki: "David Baszucki (creator of Roblox)",
+      marioCharacter: "Mario",
+      luigiCharacter: "Luigi",
+      gtaV: "GTA V",
       gamesFact1:
         "Minecraft heeft meer spelers in totaal, met honderden miljoenen verkochte exemplaren.",
       gamesFact2:
         "Nintendo Switch is wereldwijd veel vaker verkocht dan PS5.",
+      gamesFact3:
+        "David Baszucki is generally estimated to have a higher net worth than Markus Persson.",
+      gamesFact4: "Luigi is Mario's brother.",
+      gamesFact5:
+        "Minecraft is the best-selling game of all time, ahead of GTA V.",
       correct: "Correct !",
       wrong: "Faux !",
       correctAnswer: "Juiste antwoord:",
@@ -372,6 +454,7 @@ export const copy = {
       foods: "Nourriture",
       vehicles: "Véhicules",
       animals: "Animaux",
+      vehiclesDescription: "How well do you know crazy vehicle facts?",
       animalsDescription: "Teste tes connaissances sur les animaux.",
       animalsQ1: "Which zoo is bigger?",
       animalsQ2: "Which bear can bite harder?",
@@ -402,16 +485,56 @@ export const copy = {
       raccoon: "Raccoon",
       crocodile: "Crocodile",
       shark: "Shark",
+      vehiclesQ1:
+        "Which window did Elon Musk break during the Cybertruck presentation?",
+      vehiclesQ2:
+        "Which is heavier: the biggest dump truck or a Boeing 747 jumbo jet?",
+      vehiclesQ3: "What can a circus bear ride?",
+      vehiclesQ4: "Which is faster: an F1 car or a MotoGP bike?",
+      vehiclesQ5: "Which car is the most expensive?",
+      vehiclesFact1:
+        "At the 2019 Cybertruck reveal, the side window cracked during the metal-ball demo.",
+      vehiclesFact2:
+        "The largest dump trucks can weigh more than a Boeing 747 at maximum takeoff weight.",
+      vehiclesFact3:
+        "Circus bears are often shown riding tiny bikes, not boats.",
+      vehiclesFact4:
+        "An F1 car is generally faster overall than a MotoGP bike, especially over a full lap.",
+      vehiclesFact5:
+        "The 1955 Mercedes-Benz 300 SLR Uhlenhaut Coupe sold for about $142 million, far above $12.5 million.",
+      sideWindow: "Side window",
+      windshield: "Windshield",
+      biggestDumpTruck: "Biggest dump truck",
+      boeing747: "Boeing 747 jumbo jet",
+      bike: "Bike",
+      boat: "Boat",
+      f1Car: "F1 car",
+      motoGp: "MotoGP bike",
+      mercedes300Slr: "1955 Mercedes-Benz 300 SLR",
+      bugattiLaVoitureNoire: "Bugatti La Voiture Noire",
       q1: "Roblox ou Minecraft ? Qui a le plus de joueurs ?",
       roblox: "Roblox",
       minecraft: "Minecraft",
       q2: "Nintendo Switch ou PS5 ? Qui s'est le plus vendu ?",
       nintendo: "Nintendo Switch",
       ps5: "PS5",
+      q3: "Who is richer?",
+      q4: "Who is the borther of Mario's brother's brother?",
+      q5: "What is the best-selling game of all time?",
+      markusPersson: "Markus Persson (creator of Minecraft)",
+      davidBaszucki: "David Baszucki (creator of Roblox)",
+      marioCharacter: "Mario",
+      luigiCharacter: "Luigi",
+      gtaV: "GTA V",
       gamesFact1:
         "Minecraft a plus de joueurs au total, avec plus de 300 millions d'exemplaires vendus.",
       gamesFact2:
         "La Nintendo Switch s'est vendue beaucoup plus que la PS5.",
+      gamesFact3:
+        "David Baszucki is generally estimated to have a higher net worth than Markus Persson.",
+      gamesFact4: "Luigi is Mario's brother.",
+      gamesFact5:
+        "Minecraft is the best-selling game of all time, ahead of GTA V.",
       correct: "Richtig!",
       wrong: "Falsch!",
       correctAnswer: "Bonne réponse :",
@@ -512,6 +635,7 @@ export const copy = {
       foods: "Essen",
       vehicles: "Fahrzeuge",
       animals: "Tiere",
+      vehiclesDescription: "How well do you know crazy vehicle facts?",
       animalsDescription: "Teste dein Tierwissen und lerne Fakten.",
       animalsQ1: "Which zoo is bigger?",
       animalsQ2: "Which bear can bite harder?",
@@ -542,16 +666,56 @@ export const copy = {
       raccoon: "Raccoon",
       crocodile: "Crocodile",
       shark: "Shark",
+      vehiclesQ1:
+        "Which window did Elon Musk break during the Cybertruck presentation?",
+      vehiclesQ2:
+        "Which is heavier: the biggest dump truck or a Boeing 747 jumbo jet?",
+      vehiclesQ3: "What can a circus bear ride?",
+      vehiclesQ4: "Which is faster: an F1 car or a MotoGP bike?",
+      vehiclesQ5: "Which car is the most expensive?",
+      vehiclesFact1:
+        "At the 2019 Cybertruck reveal, the side window cracked during the metal-ball demo.",
+      vehiclesFact2:
+        "The largest dump trucks can weigh more than a Boeing 747 at maximum takeoff weight.",
+      vehiclesFact3:
+        "Circus bears are often shown riding tiny bikes, not boats.",
+      vehiclesFact4:
+        "An F1 car is generally faster overall than a MotoGP bike, especially over a full lap.",
+      vehiclesFact5:
+        "The 1955 Mercedes-Benz 300 SLR Uhlenhaut Coupe sold for about $142 million, far above $12.5 million.",
+      sideWindow: "Side window",
+      windshield: "Windshield",
+      biggestDumpTruck: "Biggest dump truck",
+      boeing747: "Boeing 747 jumbo jet",
+      bike: "Bike",
+      boat: "Boat",
+      f1Car: "F1 car",
+      motoGp: "MotoGP bike",
+      mercedes300Slr: "1955 Mercedes-Benz 300 SLR",
+      bugattiLaVoitureNoire: "Bugatti La Voiture Noire",
       q1: "Roblox oder Minecraft? Wer hat mehr Spieler?",
       roblox: "Roblox",
       minecraft: "Minecraft",
       q2: "Nintendo Switch oder PS5? Welche hat sich mehr verkauft?",
       nintendo: "Nintendo Switch",
       ps5: "PS5",
+      q3: "Who is richer?",
+      q4: "Who is the borther of Mario's brother's brother?",
+      q5: "What is the best-selling game of all time?",
+      markusPersson: "Markus Persson (creator of Minecraft)",
+      davidBaszucki: "David Baszucki (creator of Roblox)",
+      marioCharacter: "Mario",
+      luigiCharacter: "Luigi",
+      gtaV: "GTA V",
       gamesFact1:
         "Minecraft hat insgesamt mehr Spieler und über 300 Millionen verkaufte Exemplare.",
       gamesFact2:
         "Die Nintendo Switch wurde weltweit viel häufiger verkauft als die PS5.",
+      gamesFact3:
+        "David Baszucki is generally estimated to have a higher net worth than Markus Persson.",
+      gamesFact4: "Luigi is Mario's brother.",
+      gamesFact5:
+        "Minecraft is the best-selling game of all time, ahead of GTA V.",
       correct: "Correct!",
       wrong: "Wrong!",
       correctAnswer: "Richtige Antwort:",
