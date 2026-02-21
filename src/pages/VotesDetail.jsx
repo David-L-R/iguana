@@ -38,6 +38,17 @@ import tigerImage from '../assets/votes/animals/tiger.webp'
 import raccoonImage from '../assets/votes/animals/raccoon.jpeg'
 import crocodileImage from '../assets/votes/animals/crocodile.webp'
 import sharkImage from '../assets/votes/animals/shark.avif'
+import recordsImage from '../assets/votes/records/guiness_logo_cover.png'
+import leeRedmondImage from '../assets/votes/records/lee-redmond-fingernalis.jpg'
+import shridharChillalImage from '../assets/votes/records/shridhar-chillal-fingernails.jpg'
+import aleixSeguraVendrellImage from '../assets/votes/records/aleix-segura-vendrell-breath.jpg'
+import davidBlaineImage from '../assets/votes/records/david-blaine-breath.jpg'
+import michaelPhelpsImage from '../assets/votes/records/michael-phelps-medals.avif'
+import usainBoltImage from '../assets/votes/records/usain-bolt-models.jpg'
+import xieQiupingImage from '../assets/votes/records/xie-qiuping.jpg'
+import ashaMandelaImage from '../assets/votes/records/asha-mandela-hair.jpg'
+import vincentVanDerHolstImage from '../assets/votes/records/vincent-van-der-holst-cycle.jpg'
+import vaibhavTRajamaniImage from '../assets/votes/records/vaibhav-rajamani-cycle.png'
 
 function VotesDetail() {
   const { copy } = useLanguage()
@@ -356,6 +367,99 @@ function VotesDetail() {
               {
                 label: copy.votes.shark,
                 image: sharkImage,
+                isCorrect: false,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        slug: 'records',
+        title: copy.votes.records,
+        description: copy.votes.recordsDescription,
+        image: recordsImage,
+        questions: [
+          {
+            type: 'quiz',
+            text: copy.votes.recordsQ1,
+            fact: copy.votes.recordsFact1,
+            options: [
+              {
+                label: copy.votes.leeRedmond,
+                image: leeRedmondImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.shridharChillal,
+                image: shridharChillalImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.recordsQ2,
+            fact: copy.votes.recordsFact2,
+            options: [
+              {
+                label: copy.votes.aleixSeguraVendrell,
+                image: aleixSeguraVendrellImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.davidBlaine,
+                image: davidBlaineImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.recordsQ3,
+            fact: copy.votes.recordsFact3,
+            options: [
+              {
+                label: copy.votes.michaelPhelps,
+                image: michaelPhelpsImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.usainBolt,
+                image: usainBoltImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.recordsQ4,
+            fact: copy.votes.recordsFact4,
+            options: [
+              {
+                label: copy.votes.xieQiuping,
+                image: xieQiupingImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.ashaMandela,
+                image: ashaMandelaImage,
+                isCorrect: false,
+              },
+            ],
+          },
+          {
+            type: 'quiz',
+            text: copy.votes.recordsQ5,
+            fact: copy.votes.recordsFact5,
+            options: [
+              {
+                label: copy.votes.vincentVanDerHolst,
+                image: vincentVanDerHolstImage,
+                isCorrect: true,
+              },
+              {
+                label: copy.votes.vaibhavTRajamani,
+                image: vaibhavTRajamaniImage,
                 isCorrect: false,
               },
             ],

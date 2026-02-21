@@ -6,6 +6,7 @@ import booksImage from '../assets/votes/books/books.webp'
 import foodsImage from '../assets/votes/foods/foods.webp'
 import vehiclesImage from '../assets/votes/vehicles/cybertruck.webp'
 import animalsImage from '../assets/votes/animals/animals.avif'
+import recordsImage from '../assets/votes/records/guiness_logo_cover.png'
 
 function Votes() {
   const { copy } = useLanguage()
@@ -45,6 +46,12 @@ function Votes() {
       title: copy.votes.animals,
       description: copy.votes.animalsDescription,
       image: animalsImage,
+    },
+    {
+      slug: 'records',
+      title: copy.votes.records,
+      description: copy.votes.recordsDescription,
+      image: recordsImage,
     },
   ]
 

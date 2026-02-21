@@ -32,6 +32,10 @@ function Memes() {
       title: copy.memes.spiderfart,
       embedUrl: "https://www.youtube.com/embed/9WFE6Htk_Bk?si=VGrg4oCLlCpLj903",
     },
+    {
+      title: "YouTube Meme",
+      embedUrl: "https://www.youtube.com/embed/hJBWhLq8xgM?si=QguG5j4Io6wxxqpv",
+    },
   ];
 
   return (
@@ -42,8 +46,8 @@ function Memes() {
       </div>
 
       <section className='grid grid-media'>
-        {memes.map((meme) => (
-          <article key={meme.title} className='card media-card'>
+        {memes.map((meme, index) => (
+          <article key={`${meme.title}-${index}`} className='card media-card'>
             <h3>{meme.title}</h3>
             {meme.image ? (
               <img
